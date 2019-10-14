@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>MG Servicio Técnico PC - Mendoza</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Servicio Técnico de PC, Mendoza">
+<meta name="keywords" content="servicio tecnico pc mendoza">
+<meta name="author" content="MG">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/carousel.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<!--SectionSuave-->
+<script type="text/javascript" src="js/sectionsuave.js"></script>
+
+<!--Carousel de tarjetas-->
+<script src="js/carousel.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+	//
+	//carufredsel
+	$('#caroufredsel_slider1').carouFredSel({
+		auto: {
+			timeoutDuration: 9000					
+		},
+		responsive: true,		
+		direction:	"left",
+		prev: '.prev1',
+		next: '.next1',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo",
+			fx: "fade"
+		},			
+		items: {
+        	width: '1000',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 1
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			},
+		pagination  : ".pagination1"
+
+
+	});
+	//	carouFredSel
+	$('#slider3 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev3',
+		next: '.next3',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '310',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	}); 
+
+
+
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){
+		$('#caroufredsel_slider1').trigger("updateSizes");
+		$('#slider3 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="main">
+<div id="main">
+
+<div class="top1_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top1 clearfix">
+	
+<header><div class="logo_wrapper"><a href="index-2.html" class="logo"><img src="images/logo.png" alt=""></a></div></header>
+
+<div class="block1">
+
+<div class="block2">
+<div class="search-form-wrapper">
+<img src="images/social.png" alt="">
+<!--form id="search-form" action="http://www.templates-preview.com/bootstrap-templates/300111772/search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
+	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
+</form-->	
+</div>
+</div>	
+
+<div id=home></div>	
+<div class="block3">
+<div class="menu_wrapper">
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+			  <!--li class="active"><a href="index-2.html">Home</a></li-->
+			  <!--li><a href="#home">Home</a></li-->
+			  <li><a href="#servicios">Servicios</a></li>
+			  <!--li class="sub-menu sub-menu-1"><a href="index-3.html">Servicios<em></em></a>
+			    <ul>
+			      <li><a href="index-3.html">reparación</a></li>
+			      <li class="sub-menu sub-menu-2"><a href="index-3.html">Armado<em></em></a>
+			        <ul>
+				<li><a href="index-3.html">lorem ipsum dolor</a></li>
+				<li><a href="index-3.html">sit amet</a></li>
+				<li><a href="index-3.html">adipiscing elit</a></li>
+				<li><a href="index-3.html">nunc suscipit</a></li>
+				<li><a href="404.html">404 page not found</a></li>
+			</ul>
+		</li>
+		<li class="sub-menu sub-menu-2"><a href="index-3.html">Mantenimiento<em></em></a>
+		  <ul>
+				<li><a href="index-3.html">lorem ipsum dolor</a></li>
+				<li><a href="index-3.html">sit amet</a></li>
+				<li><a href="index-3.html">adipiscing elit</a></li>
+				<li><a href="index-3.html">nunc suscipit</a></li>									
+			</ul>
+		</li>
+		<li><a href="index-3.html">instalación</a></li>
+		<li><a href="index-3.html">Equipamiento</a></li>
+			    </ul>						
+</li-->
+			  <li><a href="#tecnicos">Técnicos</a></li>
+			  <li><a href="http://mgmza.speedtestcustom.com/">Mide tu Internet</a></li>
+			  <li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+</div>
+</div>
+
+</div>
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+
+<div class="top2_wrapper">
+<div class="top2_top"></div>
+<div class="top2_bottom"></div>	
+<div class="top2">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top2_inner clearfix">
+	
+<div class="caroufredsel_slider1_wrapper">	
+	<ul id="caroufredsel_slider1" class="clearfix">
+		<li>
+			<div class="caroufredsel_slide1 row">
+				<div class="span6 block1">
+					<img src="images/slide01.png" alt="" class="img">
+				</div>
+				<div class="span6 block2">
+					<div class="txt1">Computadoras</div>
+					<div class="txt2">Servicio Técnico</div>
+					<div class="txt3">Mantenimiento<br>Reparación<br>Armado</div>
+				</div>					
+			</div>
+		</li>
+		<li>
+			<div class="caroufredsel_slide1 row">
+				<div class="span6 block1">
+					<img src="images/slide02.png" alt="" class="img">
+				</div>
+				<div class="span6 block2">
+					<div class="txt1">Sitios Web</div>
+					<div class="txt2">Diseño Web</div>
+					<div class="txt3">Asesoramiento<br>Diseño Gráfico<br>Implementación</div>
+				</div>					
+			</div>
+		</li>
+		<li>
+			<div class="caroufredsel_slide1 row">
+				<div class="span6 block1">
+					<img src="images/slide03.png" alt="" class="img">
+				</div>
+				<div class="span6 block2">
+					<div class="txt1">Recibimos todas las tarjetas</div>
+					<!--div class="txt2">Tarjetas</div-->
+					<div class="txt3">Visa<br>Mastercard<br>y muchas más</div>
+				</div>					
+			</div>
+		</li>					
+	</ul>
+	<div class="pagination1" id="caroufredsel_pag1"></div>
+</div>
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+<a class="prev1" href="#"></a>
+<a class="next1" href="#"></a>
+</div>
+
+<div class="top3_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top3 clearfix">
+
+
+<!--div class="txt1">Aceptamos todas las tarjetas</div-->
+<!--div class="txt2">Número de teléfono: <strong>800 123 45 67</strong></div-->	
+
+
+<!--Carousel de tarjetas-->
+<!--div class="container">
+  <section class="customer-logos slider">
+    <div class="slide"><img src="images/carousel/image1.png"></div>
+    <div class="slide"><img src="images/carousel/image2.png"></div>
+    <div class="slide"><img src="images/carousel/image3.png"></div>
+    <div class="slide"><img src="images/carousel/image4.png"></div>
+    <div class="slide"><img src="images/carousel/image5.png"></div>
+    <div class="slide"><img src="images/carousel/image6.png"></div>
+    <div class="slide"><img src="images/carousel/image7.png"></div>
+    <div class="slide"><img src="images/carousel/image8.png"></div>
+  </section>
+</div-->
+
+
+<div id=servicios></div>	
+<div class="txt1">Nuestros Servicios</div>
+<!--div class="txt2">Whatsapp: <strong>261-3742224</strong></div-->
+
+<div id="slider3">
+<a class="prev3" href="#"></a>
+<a class="next3" href="#"></a>		
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="banner banner1">
+						<div class="banner_inner">
+							<a href="#">
+								<figure><img src="images/banner1.jpg" alt="" class="img"></figure>
+								<div class="txt1">Mantenimiento</div>
+								<div class="txt2">Limpieza de Hardware</div>
+								<!--div class="txt3">Ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incidid Ut enim ad mi</div-->
+								<!--div class="txt4">more</div-->								
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="banner banner2">
+						<div class="banner_inner">
+							<a href="#">
+								<figure><img src="images/banner2.jpg" alt="" class="img"></figure>
+								<div class="txt1">Backups</div>
+								<div class="txt2">Restauración de datos</div>
+								<!--div class="txt3">Koleacene anrit msesera uas lety. Cum socis natoqu eadist mte duese feugiata lecstrhal.</div-->
+								<!--div class="txt4">more</div-->								
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="banner banner3">
+						<div class="banner_inner">
+							<a href="#">
+								<figure><img src="images/banner3.jpg" alt="" class="img"></figure>
+								<div class="txt1">Modems/Routers</div>
+								<div class="txt2">Instalación y Configuración</div>
+								<!--div class="txt3">Ut tlor dapegetelementum vsleifend elinetor wisi et urna. Aliqua era vtpatis ac turpis.Integer</div-->
+								<!--div class="txt4">more</div-->								
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="banner banner4">
+						<div class="banner_inner">
+							<a href="#">
+								<figure><img src="images/banner4.jpg" alt="" class="img"></figure>
+								<div class="txt1">Sistemas Operativos</div>
+								<div class="txt2">Windows, Linux, etc</div>
+								<!--div class="txt3">Aliqua era vtpatis ac turpis.Integer ante eu luisque nulla. Fusce euismod consequat ante.</div-->
+								<!--div class="txt4">more</div-->								
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="banner banner5">
+						<div class="banner_inner">
+							<a href="#">
+								<figure><img src="images/banner5.jpg" alt="" class="img"></figure>
+								<div class="txt1">Programas</div>
+								<div class="txt2">Antivirus, Office, Adobe</div>
+								<!--div class="txt3">Aliqua era vtpatis ac turpis.Integer rutrum ante eu luisque nulla. Fusce euismod consequat ante.</div-->
+								<!--div class="txt4">more</div-->								
+							</a>
+						</div>						
+					</div>
+				</li>													
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div class="top4_wrapper">
+<div class="top4_top"></div>
+<div class="top4_bottom"></div>	
+<div class="top4">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top4_inner clearfix">
+
+
+
+
+
+
+
+	
+<div class="txt1">Y mucho más: </div>
+
+<div class="row">
+<div class="span3">
+<ul class="ul1">
+	<li><a href="#"><img src="images/ic1.png" class="img"><span class="txt">Limpieza de Virus</span></a></li>
+	<li><a href="#"><img src="images/ic2.png" class="img"><span class="txt">Eliminación de Malware</span></a></li>
+	<li><a href="#"><img src="images/ic3.png" class="img"><span class="txt">Instalación de Antivirus</span></a></li>
+</ul>	
+</div>
+<div class="span3">
+<ul class="ul1">
+	<li><a href="#"><img src="images/ic4.png" class="img"><span class="txt">Backups</span></a></li>
+	<li><a href="#"><img src="images/ic5.png" class="img"><span class="txt">Copias de Seguridad</span></a></li>
+	<li><a href="#"><img src="images/ic6.png" class="img"><span class="txt">Restauración de Datos</span></a></li>
+</ul>	
+</div>
+<div class="span3">
+<ul class="ul1">
+	<li><a href="#"><img src="images/ic7.png" class="img"><span class="txt">Redes Físicas</span></a></li>
+	<li><a href="#"><img src="images/ic8.png" class="img"><span class="txt">Redes Inalámbricas</span></a></li>
+	<li><a href="#"><img src="images/ic9.png" class="img">Administrador de Red</a></li>
+</ul>	
+</div>
+<div class="span3">
+<ul class="ul1">
+	<li><a href="#"><img src="images/ic10.png" class="img">Cámaras IP</a></li>
+	<li><a href="#"><img src="images/ic11.png" class="img"><span class="txt">Alojamiento de video</span></a></li>
+	<li><a href="#"><img src="images/ic12.png" alt="" class="img"><span class="txt">Administración</span></a></li>
+</ul>	
+</div>	
+</div>
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span5">
+
+<div class="box1">
+  <h2>¿QUIÉNES SOMOS?</h2>
+  <div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class="img-polaroid"><img src="images/home01.jpg" alt=""></figure>
+		<div class="caption">
+			<h3>Universidad Tecnológica Nacional (UTN)</h3>
+			<h3>Instituto de Educación Superior Manuel Belgrano - IES 9008</h3>
+			<p>Para poder brindarte nuestra mayor seguridad y confianza, te contamos que todos los integrantes de MyG, estan recibidos de carreras universitarias, tales como: </p>
+			<p>- Ingeniero en Sistemas</p>
+			<p>- Técnico Superior en Computación & Redes</p>
+			<p>Además de contar con experencia, tanto en empresas importantes del sector, como también en forma autónoma.</p>
+			<!--a href="#" class="button1">Read more</a-->
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+<div id=tecnicos></div>	
+<div class="span7">
+	
+<h2>Técnicos</h2>
+
+<div class="testimonial1">
+<div class="txt2">
+	<strong>Técnico Gonzalo</strong> <!--a href="#">http://demolink.org</a-->
+</div>	
+<div class="txt1">
+	Informático del alma, apasionado por la Computación y las Redes. Desde los 12 años, que amo la computación y al ser una rama la cual se va actualizando casi en un parpadero a cada instante, no puedo evitar siempre aprender métodos y tecnologías nuevas para poder brindar el mejor servicio a mis clientes. Ya recibido, planeo al igual que mi compañero de trabajo, brindar un servicio inigualable, transparente y siempre pensando en el cliente.
+</div>
+</div>
+
+<div class="testimonial1">
+<div class="txt2">
+	<strong>Técnico Ezequiel</strong> <!--a href="#">http://demolink.org</a-->
+</div>
+<div class="txt1">
+	
+</div>	
+</div>
+
+<div class="testimonial1">
+<div class="txt2">
+	<strong>Técnico Marcel</strong> <!--a href="#">http://demolink.org</a-->
+</div>	
+<div class="txt1">
+	Somos compañeros que llevamos tiempo en el rubro informático, pero no contabamos con titulo oficial, ahora sí. Somos personas emprendedoras y como sabemos, la importancia de contar con nuestros clientes, para ello la confianza es fundamental para tener una relación duradera. Es por ello que dejo mi whatsapp personal para que puedas comunicarte siempre ante cualquier duda que tengas (2615250253).
+</div>
+</div>
+
+<!--a href="#" class="button1">more testimonials</a-->
+
+
+
+
+
+
+
+</div>
+</div>	
+</div>	
+</div>
+
+<div class="bot1_wrapper">
+<div class="bot1_top"></div>
+<div class="bot1_bottom"></div>	
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot1_inner clearfix">
+	
+
+
+<!--Carousel de tarjetas-->
+<div class="container">
+  <section class="customer-logos slider">
+    <div class="slide"><img src="images/carousel/image1.png"></div>
+    <div class="slide"><img src="images/carousel/image2.png"></div>
+    <div class="slide"><img src="images/carousel/image3.png"></div>
+    <div class="slide"><img src="images/carousel/image4.png"></div>
+    <div class="slide"><img src="images/carousel/image5.png"></div>
+    <div class="slide"><img src="images/carousel/image6.png"></div>
+    <div class="slide"><img src="images/carousel/image7.png"></div>
+    <div class="slide"><img src="images/carousel/image8.png"></div>
+  </section>
+</div>
+
+
+
+
+
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+</div>
+
+
+<div id=contacto></div>	
+<div class="formulario">
+
+	<h2>Contacto</h2>
+  	<img src="images/social.png" alt="">
+  	<br>
+  	<h4>O escríbenos! Tu consulta no molesta</h4>
+
+	<!--form id="ajax-contact" method="post" action="php/mailer.php" class="contacto">
+                              <div class="">                
+                                   <input type="text" class="form-control" placeholder="Nombre" id="name" name="name" required>
+                              </div>
+
+                              <div class="">               
+                                   <input type="email" class="form-control" placeholder="EMail" id="email" name="email" required>
+                              </div>    
+
+                              <div class="">               
+                                   <input type="text" class="form-control" placeholder="Asunto" id="subject" name="subject" required>
+                              </div>
+
+                              <div class="">
+                                   <textarea class="form-control" rows="5" placeholder="Mensaje" id="message" name="message" required></textarea>
+                              </div>
+                              <div id="form-messages" class="formulario"></div>
+                             <div class="">
+                            		<button type="submit" class="boton-enviar"><span>Enviar</span></button>
+                             </div>
+    </form-->
+</div>				
+
+
+<div class="bot2_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot2 clearfix">
+<div class="row">
+<div class="span8">
+<div class="block1">
+
+<div class="bot2_title">Copyright</div>	
+<footer><div class="copyright">Copyright © 2019<br>
+    <a href="#">Creado por MyG</a></div></footer>
+
+</div>	
+</div>
+<div class="span4">
+<div class="block1">
+
+<div class="bot2_title">Síguenos </div>	
+
+<div class="social_wrapper">
+	<ul class="social clearfix">
+    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+    <li><a href="#"><img src="images/social_ic3.png"></a></li>
+    <li><a href="#"><img src="images/social_ic4.png"></a></li>
+    <li><a href="#"><img src="images/social_ic5.png"></a></li>
+	</ul>
+</div>
+
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+<!-- Mirrored from www.templates-preview.com/bootstrap-templates/300111772/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2017 20:21:44 GMT -->
+</html>
