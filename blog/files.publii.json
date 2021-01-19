@@ -1,0 +1,392 @@
+[
+    {
+        "path": "404.html",
+        "type": "file",
+        "md5": "2aa16b7e545706b9c35163ba6767457d"
+    },
+    {
+        "path": "assets",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/css",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/css/editor.css",
+        "type": "file",
+        "md5": "e5909a88ba1158a79ba2dbf82d6b2d86"
+    },
+    {
+        "path": "/assets/css/main.css",
+        "type": "file",
+        "md5": "0261089e6bc7353f302e17455412d725"
+    },
+    {
+        "path": "/assets/css/photoswipe.css",
+        "type": "file",
+        "md5": "ffb247881cd6f611d007fd4a96b7b16a"
+    },
+    {
+        "path": "/assets/css/style.css",
+        "type": "file",
+        "md5": "dfcb019c578c5727e777d0b76bdaed7c"
+    },
+    {
+        "path": "assets/js",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/js/photoswipe-ui-default.min.js",
+        "type": "file",
+        "md5": "d067f0883540b1ddda0e2c9ad1b14260"
+    },
+    {
+        "path": "/assets/js/photoswipe.min.js",
+        "type": "file",
+        "md5": "017385b552f7e0d979e2e2fe6f324015"
+    },
+    {
+        "path": "/assets/js/scripts.js",
+        "type": "file",
+        "md5": "fc61ec11990fdefc13aae62f2f414832"
+    },
+    {
+        "path": "/assets/js/scripts.min.js",
+        "type": "file",
+        "md5": "3dc768003cc6d66c9e7bf0904e71d3e8"
+    },
+    {
+        "path": "/assets/js/svg-fix.js",
+        "type": "file",
+        "md5": "7c0d2bb7276904b382e80bf2d85e8a96"
+    },
+    {
+        "path": "/assets/js/svg-map.js",
+        "type": "file",
+        "md5": "e05b5782d7cfb0e230703527e8067fed"
+    },
+    {
+        "path": "assets/svg",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/svg/gallery-icons-dark.svg",
+        "type": "file",
+        "md5": "452594838e74a3df91ad4a20cf53c831"
+    },
+    {
+        "path": "/assets/svg/gallery-icons-light.svg",
+        "type": "file",
+        "md5": "ca77079e0fe8270a7447d7f1f5d543b0"
+    },
+    {
+        "path": "/assets/svg/svg-map.svg",
+        "type": "file",
+        "md5": "5ee1b50f16cb5638b0c0943ee68ed9de"
+    },
+    {
+        "path": "authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/gonza8",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/gonza8/index.html",
+        "type": "file",
+        "md5": "db42888f19bbe332bca154dacb105618"
+    },
+    {
+        "path": "index.html",
+        "type": "file",
+        "md5": "aa93aa8c098202384f28371a34ef504f"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/files",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/1",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/1/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-2xl.jpg",
+        "type": "file",
+        "md5": "ebcf6ec3de789e231c411729b9d23be8"
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-lg.jpg",
+        "type": "file",
+        "md5": "43c926da9e6806c8aa4d2209ed413c47"
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-md.jpg",
+        "type": "file",
+        "md5": "8cdc9f9af9dfcf3d4d88a7553ecda715"
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-sm.jpg",
+        "type": "file",
+        "md5": "7d434f6f63877ecaacfbed79c13a82ae"
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-xl.jpg",
+        "type": "file",
+        "md5": "ebcf6ec3de789e231c411729b9d23be8"
+    },
+    {
+        "path": "/media/posts/1/responsive/steam-xs.jpg",
+        "type": "file",
+        "md5": "e04beea87ac73e2ee7fa74655551a0ec"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-2xl.jpg",
+        "type": "file",
+        "md5": "4e9e7a6206129a5cf27678fd431a76f9"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-lg.jpg",
+        "type": "file",
+        "md5": "4e9e7a6206129a5cf27678fd431a76f9"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-md.jpg",
+        "type": "file",
+        "md5": "147e41a79f7553b524281d86aee8b538"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-sm.jpg",
+        "type": "file",
+        "md5": "fc35753daf3ffd58b067f1ff17dfc991"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-xl.jpg",
+        "type": "file",
+        "md5": "4e9e7a6206129a5cf27678fd431a76f9"
+    },
+    {
+        "path": "/media/posts/1/responsive/steamusuarios-xs.jpg",
+        "type": "file",
+        "md5": "125e31ee36fc640ea646ca023ad10443"
+    },
+    {
+        "path": "/media/posts/1/steam.jpg",
+        "type": "file",
+        "md5": "277913b30f5d36bfe5bb327aa3c6c356"
+    },
+    {
+        "path": "/media/posts/1/steamusuarios.jpg",
+        "type": "file",
+        "md5": "0acdb7cfba40bc2ceff22977fced3b37"
+    },
+    {
+        "path": "media/posts/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/2/amdprueba.jpg",
+        "type": "file",
+        "md5": "ab0bd1b1ac658fa0e607ab724b162997"
+    },
+    {
+        "path": "/media/posts/2/ramddr5.jpg",
+        "type": "file",
+        "md5": "9db98f0e3c3e2b9bc69b459a434174a8"
+    },
+    {
+        "path": "media/posts/2/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-2xl.jpg",
+        "type": "file",
+        "md5": "b6fffe008f0a0c7a2785c4ad68b6e2c2"
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-lg.jpg",
+        "type": "file",
+        "md5": "d005a47656b48fcf5a44e346da5e8ede"
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-md.jpg",
+        "type": "file",
+        "md5": "b8dcc1a7e9bc406727f0f573f16ddcd5"
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-sm.jpg",
+        "type": "file",
+        "md5": "9cecb24386e3f971cf50c379243872bc"
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-xl.jpg",
+        "type": "file",
+        "md5": "b6fffe008f0a0c7a2785c4ad68b6e2c2"
+    },
+    {
+        "path": "/media/posts/2/responsive/amdprueba-xs.jpg",
+        "type": "file",
+        "md5": "4b14a38e59eb6648b82bcebb0ffcfa1a"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-2xl.jpg",
+        "type": "file",
+        "md5": "5a6b44cbdba51b0c55c8d8397434c262"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-lg.jpg",
+        "type": "file",
+        "md5": "5a6b44cbdba51b0c55c8d8397434c262"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-md.jpg",
+        "type": "file",
+        "md5": "5a6b44cbdba51b0c55c8d8397434c262"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-sm.jpg",
+        "type": "file",
+        "md5": "2923c95edc87d36361d81d7e23c73e62"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-xl.jpg",
+        "type": "file",
+        "md5": "5a6b44cbdba51b0c55c8d8397434c262"
+    },
+    {
+        "path": "/media/posts/2/responsive/ramddr5-xs.jpg",
+        "type": "file",
+        "md5": "de923cae2b21bf203a856a635e1eac5c"
+    },
+    {
+        "path": "media/tags",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/favicon.ico",
+        "type": "file",
+        "md5": "263b772290d487ea15390302f0b846a6"
+    },
+    {
+        "path": "/media/website/g-avatar-2.png",
+        "type": "file",
+        "md5": "e3ab11622dcdf5e495ed119b073db9f6"
+    },
+    {
+        "path": "/media/website/mglogofinal2.png",
+        "type": "file",
+        "md5": "29706490f14bae7699def42e941f75fb"
+    },
+    {
+        "path": "media/website/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/responsive/g-avatar-2-xs.png",
+        "type": "file",
+        "md5": "04fe6fb98961244d6a19e39a3280fd8f"
+    },
+    {
+        "path": "/media/website/responsive/mglogofinal2-xs.png",
+        "type": "file",
+        "md5": "c43015470e404e2bfb349a32cecb9e71"
+    },
+    {
+        "path": "robots.txt",
+        "type": "file",
+        "md5": "9152d7f1724ed8fbcd2e0c87029f193c"
+    },
+    {
+        "path": "ryzen-apu-5000-soportaran-ddr5.html",
+        "type": "file",
+        "md5": "406b79af529913658b528d22c073b24f"
+    },
+    {
+        "path": "search.html",
+        "type": "file",
+        "md5": "87f40ce1309ed41be9be276f966e182b"
+    },
+    {
+        "path": "steam-supero-25-millones.html",
+        "type": "file",
+        "md5": "41b3cd65251f2489405fea31c6071d9c"
+    },
+    {
+        "path": "tags",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "tags/gaming",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/gaming/index.html",
+        "type": "file",
+        "md5": "d124c575116f45ae09fc1fbd0c1717db"
+    },
+    {
+        "path": "tags/hardware",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/hardware/index.html",
+        "type": "file",
+        "md5": "43c19c13f0924da81f15dc797849076a"
+    },
+    {
+        "path": "/tags/index.html",
+        "type": "file",
+        "md5": "5b021b65541819a57cea5d7ed5861fad"
+    },
+    {
+        "path": "tags/internet",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/internet/index.html",
+        "type": "file",
+        "md5": "60aac4549bfb519b84cafe5a78c5fd5b"
+    }
+]
