@@ -22,31 +22,15 @@ body{ background:#333333; border:0; font: 14px 'Titillium Web', Arial, Helvetica
 .breadcrumbs1 a:hover{color: #929292;}
 .breadcrumbs1 span{display: inline-block; width: 9px; height: 14px; background: none; margin: 0 15px; background: url(../images/breadcrumbs.png) center center no-repeat;}
 
-.formulario { text-align: center; }
-.formulario h2 { color: white; }
-
 .formulario {
-	text-align: center;
-	color: white;
-	padding-bottom: 10px;
-	}
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  }
 
 .formulario h2 {
 	color: white;
-}
-
-.form-control {
-	width: 30%;
-}	
-
-.boton-enviar {
-  border-radius: 10px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #333333;
-  padding: 10px 20px 10px 20px;
-  
 }
 
 .boton-enviar:hover {
@@ -176,7 +160,7 @@ header{float: left; padding-top: 20px;}
 .ul0 > li a{color:#bababa; text-decoration: none; }
 .ul0 > li a:hover{color:#fff; text-decoration: underline; }
 
-.bot2_wrapper{ padding-bottom: 15px; padding-top: 15px; background: #333333; }
+.bot2_wrapper{ padding-bottom: 15px; padding-top: 25px; background: #242424; }
 .bot2{}
 .bot2 .block1{}
 .bot2 .block1.last{padding-bottom: 0;}
@@ -189,9 +173,9 @@ footer{}
 .copyright a{color: #8e8e8e; text-decoration: underline;}
 .copyright a:hover{color: #fff; text-decoration: none;}
 
-.social_wrapper{}
+.social_wrapper{  }
 .social{ display: inline-block; margin: 0 0px; padding-top: 0px; list-style: none; white-space: nowrap;}
-.social li{display: inline-block; margin: 0 8px 8px 0; float: left;}
+.social li{display: inline-block; margin: 0 7px 8px 0; float: left;}
 .social li a{opacity: 0.2; filter: alpha(opacity=20);}
 .social li a:hover{opacity: 1; filter: alpha(opacity=100);}
 
@@ -273,7 +257,7 @@ h6{ font-family:'Titillium Web'; font-weight:400; font-size:20px; line-height: 2
 
 /* === */
 
-.box1{border-right: 1px solid #dddddd; margin-right: 10px; padding-right: 30px;}
+.box1{border-right: 1px solid #dddddd; margin-right: 10px; padding-right: 30px; }
 
 .button1{ display:inline-block; line-height:20px;  text-decoration: none; margin-top:10px; margin-bottom:10px; font-size:14px; font-family:'Titillium Web'; font-weight: 700; color:#5e5e5e; white-space:nowrap; letter-spacing:0px; background:url(../images/button1.png) right center no-repeat; padding-right: 20px; text-transform: uppercase;
 transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
@@ -288,7 +272,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 .testimonial1{margin-bottom: 20px;}
 .testimonial1 .txt1{padding-left: 50px; background: url(../images/testimonial1.png) 0 0 no-repeat; margin-bottom: 15px;}
 .testimonial1 .txt2{padding-left: 85px; padding-top: 5px; padding-bottom: 5px; background: url(../images/testimonial2.png) 50px center no-repeat;}
-.testimonial1 .txt2 a{color: #8b8b8b;}
+.testimonial1 .txt2 a{color: #8b8b8b; text-decoration: none; }
 
 .date1{background: url(../images/date1.png) 0 center no-repeat; padding-left: 35px; font-size: 12px; color: #828282; text-transform: uppercase; line-height: 20px; margin-bottom: 10px;}
 
@@ -450,10 +434,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.page_notfound .block1{width: 680px;}
 	.page_notfound .block2{width: 460px;}
 
-
-	
-	
-
 	
 }
 /* Default landscape and desktop to large desktop */
@@ -461,8 +441,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.bot2_wrapper{ text-align: center; }
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-	
-
 	
 }
 /* Portrait tablet to landscape and desktop */
@@ -473,7 +451,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	h1{ font-size:30px; line-height:30px; padding:0px 0 20px 0; margin: 0 0 20px; border-bottom: 1px solid #dddddd;}
 
 	h2{ font-size:25px; line-height:25px; padding:25px 0 25px 0;}
-
 
 	
 }
@@ -504,12 +481,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 	#ajax-contact-form input, #ajax-contact-form textarea{width: 219px;}
 
-
-
-
-
-	
-	
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {	
@@ -569,11 +540,8 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 	h2{ font-size:20px; line-height:20px; padding:25px 0 25px 0;}
 
-		
 }
 @media (min-width: 481px) and (max-width: 767px) {
-
-
 	
 }
 /* Landscape phones and down */
@@ -596,10 +564,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.page-404 .txt1{font-size: 120px; line-height: 120px;}
 	.page-404 .txt2{font-size: 40px; line-height: 40px;}
 
-
-	/*Para que se vea bien en los celulares de resolucion 480px*/
-	.form-control {
-	width: 80%;
 }
 	
 }

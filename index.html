@@ -19,7 +19,7 @@
 
 <script type="text/javascript" src="js/jquery.js"></script>  
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/superfish.js"></script>
+<!--script type="text/javascript" src="js/superfish.js"></script-->
 
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 
@@ -31,98 +31,13 @@
 
 <!--Carousel de tarjetas-->
 <script src="js/carousel.js"></script>
-<script src="js/slick.js"></script>
+<!--script src="js/slick.js"></script-->
 <script src="js/slick.min.js"></script>
 
-
-<script>
-$(document).ready(function() {
-	//
-	//carufredsel
-	$('#caroufredsel_slider1').carouFredSel({
-		auto: {
-			timeoutDuration: 9000					
-		},
-		responsive: true,		
-		direction:	"left",
-		prev: '.prev1',
-		next: '.next1',
-		width: '100%',
-		scroll: {
-			items: 1,
-			duration: 1000,
-			easing: "easeOutExpo",
-			fx: "fade"
-		},			
-		items: {
-        	width: '1000',
-			height: 'variable',	//	optionally resize item-height			  
-			visible: {
-				min: 1,
-				max: 1
-			}
-		},
-		mousewheel: false,
-		swipe: {
-			onMouse: true,
-			onTouch: true
-			},
-		pagination  : ".pagination1"
+<!--Scripts para los carouseles-->
+<script src="js/scripts.js"></script>
 
 
-	});
-	//	carouFredSel
-	$('#slider3 .carousel.main ul').carouFredSel({
-		auto: {
-			timeoutDuration: 8000					
-		},
-		responsive: true,
-		prev: '.prev3',
-		next: '.next3',
-		width: '100%',
-		scroll: {
-			items: 1,
-			duration: 1000,
-			easing: "easeOutExpo"
-		},			
-		items: {
-        	width: '310',
-			height: 'variable',	//	optionally resize item-height			  
-			visible: {
-				min: 1,
-				max: 4
-			}
-		},
-		mousewheel: false,
-		swipe: {
-			onMouse: true,
-			onTouch: true
-			}
-	}); 
-
-
-
-	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
-	function updateSizes_vat(){
-		$('#caroufredsel_slider1').trigger("updateSizes");
-		$('#slider3 .carousel.main ul').trigger("updateSizes");
-	}
-	updateSizes_vat();
-
-}); //
-$(window).load(function() {
-	//
-
-}); //
-</script>		
-<!--[if lt IE 8]>
-		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
-	<![endif]-->    
-
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
-  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<![endif]-->
 </head>
 
 <body class="main">
@@ -134,13 +49,14 @@ $(window).load(function() {
 <div class="span12">
 <div class="top1 clearfix">
 	
-<header><div class="logo_wrapper"><a class="logo"><img src="images/logo.png" alt=""></a></div></header>
+<header><div class="logo_wrapper"><a class="logo"><img src="images/mg.png" alt=""></a></div></header>
 
 <div class="block1">
 
 <div class="block2">
 <div class="search-form-wrapper">
-<img src="images/social.png" alt="">
+<img src="images/contact.png" alt="">
+
 <!--form id="search-form" action="http://www.templates-preview.com/bootstrap-templates/300111772/search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
 	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
 	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
@@ -186,7 +102,7 @@ $(window).load(function() {
 		<li><a href="index-3.html">instalación</a></li>
 		<li><a href="index-3.html">Equipamiento</a></li>
 			    </ul>						
-</li-->
+		</li-->
 			  <li><a href="#tecnicos">Técnicos</a></li>
 			  <li><a href="#clientes">Clientes</a></li>
 			  <li><a href="http://mgmza.speedtestcustom.com/">Speedtest</a></li>
@@ -220,7 +136,7 @@ $(window).load(function() {
 		<li>
 			<div class="caroufredsel_slide1 row">
 				<div class="span6 block1">
-					<img src="images/slide01.png" alt="" class="img">
+					<img src="images/pc.png" alt="" class="img">
 				</div>
 				<div class="span6 block2">
 					<div class="txt1">Computadoras</div>
@@ -232,7 +148,7 @@ $(window).load(function() {
 		<li>
 			<div class="caroufredsel_slide1 row">
 				<div class="span6 block1">
-					<img src="images/slide02.png" alt="" class="img">
+					<img src="images/web-design.png" alt="" class="img">
 				</div>
 				<div class="span6 block2">
 					<div class="txt1">Sitios Web</div>
@@ -244,7 +160,7 @@ $(window).load(function() {
 		<li>
 			<div class="caroufredsel_slide1 row">
 				<div class="span6 block1">
-					<img src="images/slide03.png" alt="" class="img">
+					<img src="images/cards.png" alt="" class="img">
 				</div>
 				<div class="span6 block2">
 					<div class="txt1">Recibimos</div>
@@ -307,7 +223,7 @@ $(window).load(function() {
 					<div class="banner banner1">
 						<div class="banner_inner">
 							<a href="#">
-								<figure><img src="images/banner1.jpg" alt="" class="img"></figure>
+								<figure><img src="images/cleanning.jpg" alt="" class="img"></figure>
 								<div class="txt1">Mantenimiento</div>
 								<div class="txt2">Limpieza de Hardware</div>
 								<!--div class="txt3">Ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incidid Ut enim ad mi</div-->
@@ -320,7 +236,7 @@ $(window).load(function() {
 					<div class="banner banner2">
 						<div class="banner_inner">
 							<a href="#">
-								<figure><img src="images/banner2.jpg" alt="" class="img"></figure>
+								<figure><img src="images/backups.jpg" alt="" class="img"></figure>
 								<div class="txt1">Backups</div>
 								<div class="txt2">Restauración de datos</div>
 								<!--div class="txt3">Koleacene anrit msesera uas lety. Cum socis natoqu eadist mte duese feugiata lecstrhal.</div-->
@@ -333,7 +249,7 @@ $(window).load(function() {
 					<div class="banner banner3">
 						<div class="banner_inner">
 							<a href="#">
-								<figure><img src="images/banner3.jpg" alt="" class="img"></figure>
+								<figure><img src="images/routers.jpg" alt="" class="img"></figure>
 								<div class="txt1">Modems/Routers</div>
 								<div class="txt2">Instalación y Configuración</div>
 								<!--div class="txt3">Ut tlor dapegetelementum vsleifend elinetor wisi et urna. Aliqua era vtpatis ac turpis.Integer</div-->
@@ -346,7 +262,7 @@ $(window).load(function() {
 					<div class="banner banner4">
 						<div class="banner_inner">
 							<a href="#">
-								<figure><img src="images/banner4.jpg" alt="" class="img"></figure>
+								<figure><img src="images/os.jpg" alt="" class="img"></figure>
 								<div class="txt1">Sistemas Operativos</div>
 								<div class="txt2">Windows,Linux,etc</div>
 								<!--div class="txt3">Aliqua era vtpatis ac turpis.Integer ante eu luisque nulla. Fusce euismod consequat ante.</div-->
@@ -359,7 +275,7 @@ $(window).load(function() {
 					<div class="banner banner5">
 						<div class="banner_inner">
 							<a href="#">
-								<figure><img src="images/banner5.jpg" alt="" class="img"></figure>
+								<figure><img src="images/office.jpg" alt="" class="img"></figure>
 								<div class="txt1">Programas</div>
 								<div class="txt2">Antivirus, Office, Adobe</div>
 								<!--div class="txt3">Aliqua era vtpatis ac turpis.Integer rutrum ante eu luisque nulla. Fusce euismod consequat ante.</div-->
@@ -446,7 +362,7 @@ $(window).load(function() {
   <h2>¿QUIÉNES SOMOS?</h2>
   <div class="thumb1">
 	<div class="thumbnail clearfix">
-		<figure class="img-polaroid"><img src="images/home01.jpg" alt=""></figure>
+		<figure class="img-polaroid"><img src="images/university.jpg" alt=""></figure>
 		<div class="caption">
 			<h3>Universidad Tecnológica Nacional (UTN)</h3>
 			<h3>Instituto de Educación Superior Manuel Belgrano - IES 9008</h3>
@@ -474,29 +390,38 @@ $(window).load(function() {
 
 <div class="testimonial1">
 <div class="txt2">
-	<strong>Técnico Gonzalo</strong> <!--a href="#">http://demolink.org</a-->
+	<strong>Técnico Gonzalo</strong> <!--a href="#">http://demolink.org</a--> <a>Técnico Informático - Web Developer</a>
 </div>	
 <div class="txt1">
-	Informático del alma, apasionado por la Computación y las Redes. Desde los 12 años, que amo la computación y al ser una rama la cual se va actualizando casi en un parpadero a cada instante, no puedo evitar siempre aprender métodos y tecnologías nuevas para poder brindar el mejor servicio a mis clientes. Ya recibido, planeo al igual que mi compañero de trabajo, brindar un servicio inigualable, transparente y siempre pensando en el cliente.
+	Informático del alma, apasionado por la Computación y las Redes. Desde los 12 años, que amo la computación y al ser una rama la cual se va actualizando casi en un parpadero a cada instante, no puedo evitar siempre aprender métodos y tecnologías nuevas para poder brindar el mejor servicio a mis clientes. Ya recibido, planeo al igual que mis compañeros de trabajo, brindar un servicio inigualable, transparente y siempre pensando en el cliente.
 </div>
 </div>
 
 <div class="testimonial1">
 <div class="txt2">
-	<strong>Técnico Ezequiel</strong> <!--a href="#">http://demolink.org</a-->
+	<strong>Técnico Marcel</strong> <!--a href="#">http://demolink.org</a--> <a>Técnico Informático - Web Developer</a>
+</div>	
+<div class="txt1">
+	Somos compañeros que llevamos tiempo en el rubro informático, pero no contabamos con titulo oficial, ahora sí. Somos personas emprendedoras y como sabemos, la importancia de contar con nuestros clientes, para ello la confianza es fundamental para tener una relación duradera. Es por ello que dejo mi whatsapp personal para que puedas comunicarte siempre ante cualquier duda que tengas (2615250253).
+</div>
+</div>
+
+<div class="testimonial1">
+<div class="txt2">
+	<strong>Técnico Ezequiel</strong> <!--a href="#">http://demolink.org</a--> <a>Web Developer</a>
 </div>
 <div class="txt1">
-	Cursando 3er año en la carrera de Ingenieria en Sistemas de Información. 
+	Cursando el 3er año de la carrera Ingenieria en Sistemas de Información. 
 	Mi objetivo es poner en práctica, todos los conocimientos que estoy adquiriendo en mi formación universitaria y poder formar parte de un equipo de trabajo que me permita desarrollarme profesionalmente, asi como también poder brindar un servicio de calidad a nuestros clientes.
 </div>	
 </div>
 
 <div class="testimonial1">
 <div class="txt2">
-	<strong>Técnico Marcel</strong> <!--a href="#">http://demolink.org</a-->
+	<strong>Técnico Lucas</strong> <!--a href="#">http://demolink.org</a--> <a>Técnico de Celulares</a>
 </div>	
 <div class="txt1">
-	Somos compañeros que llevamos tiempo en el rubro informático, pero no contabamos con titulo oficial, ahora sí. Somos personas emprendedoras y como sabemos, la importancia de contar con nuestros clientes, para ello la confianza es fundamental para tener una relación duradera. Es por ello que dejo mi whatsapp personal para que puedas comunicarte siempre ante cualquier duda que tengas (2615250253).
+	Capacitado en reparación de celulares/tablets de "Escuelas Newton" de Mendoza, espero poder brindar un excelente servicio a mis clientes, además de estar cursando actualmente la carrera de Programación en la Universidad Tecnológica Nacional. 
 </div>
 </div>
 
@@ -559,35 +484,11 @@ $(window).load(function() {
 
 <div id=contacto></div>	
 <div class="formulario">
-
 	<h2>Contacto</h2>
-  	<img src="images/social2.png" alt="">
-  	<br>
-  	<!--h4>O escríbenos! Tu consulta no molesta</h4-->
+  	<img src="images/contact-footer.png" alt="">
 
-	<!--form id="ajax-contact" method="post" action="php/mailer.php" class="contacto">
-                              <div class="">                
-                                   <input type="text" class="form-control" placeholder="Nombre" id="name" name="name" required>
-                              </div>
 
-                              <div class="">               
-                                   <input type="email" class="form-control" placeholder="EMail" id="email" name="email" required>
-                              </div>    
-
-                              <div class="">               
-                                   <input type="text" class="form-control" placeholder="Asunto" id="subject" name="subject" required>
-                              </div>
-
-                              <div class="">
-                                   <textarea class="form-control" rows="5" placeholder="Mensaje" id="message" name="message" required></textarea>
-                              </div>
-                              <div id="form-messages" class="formulario"></div>
-                             <div class="">
-                            		<button type="submit" class="boton-enviar"><span>Enviar</span></button>
-                             </div>
-    </form-->
-</div>				
-
+</div>
 
 <div class="bot2_wrapper">
 <div class="container">
@@ -599,22 +500,24 @@ $(window).load(function() {
 <div class="block1">
 
 <div class="bot2_title">Copyright</div>	
-<footer><div class="copyright">Copyright © 2019 Todos los derechos reservados<br>
-    <a href="">Creado por MG</a></div></footer>
+<footer>
+	<div class="copyright">Copyright © 2019 Todos los derechos reservados<br>
+    <!--a href="">Creado por MG</a--><p>“El mundo suele ser cruel con el nuevo talento”. Anton Ego</p></div>
+</footer>
 
 </div>	
 </div>
 <div class="span4">
 <div class="block1">
 
-<div class="bot2_title">Síguenos </div>	
+<div class="bot2_title">Redes Sociales</div>	
 
 <div class="social_wrapper">
 	<ul class="social clearfix">
-    <li><a href="https://www.facebook.com/mygmzapc"><img src="images/social_ic1.png"></a></li>
-    <!--li><a href="#"><img src="images/social_ic2.png"></a></li-->
-    <li><a href="https://www.instagram.com/mgmza.pc/"><img src="images/social_ic3.png"></a></li>
-    <!--li><a href="#"><img src="images/social_ic4.png"></a></li-->
+    <li><a href="https://wa.link/ue0lk8"><img src="images/wsp.png"></a></li>
+    <li><a href="https://t.me/mgmzacontacto"><img src="images/tlg.png"></a></lia>
+    <li><a href="https://www.facebook.com/mygmzapc"><img src="images/fb.png"></a></li>
+    <li><a href="https://www.instagram.com/mgmza.pc/"><img src="images/ig.png"></a></li>
     <!--li><a href="#"><img src="images/social_ic5.png"></a></li-->
 	</ul>
 </div>
