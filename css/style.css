@@ -26,17 +26,20 @@ body{ background:#333333; border:0; font: 14px 'Titillium Web', Arial, Helvetica
   text-align: center;
   color: white;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   }
 
 .formulario h2 {
 	color: white;
 }
-
 .boton-enviar:hover {
   background: #666666;
 }
-
+.formulario h3 {
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+}
 
 /* ============================= header ====================== */
 .top1_wrapper{background: #333333;}
