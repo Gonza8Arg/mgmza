@@ -40,6 +40,10 @@ body{ background:#333333; border:0; font: 14px 'Titillium Web', Arial, Helvetica
 	font-size: 20px;
 	line-height: 30px;
 }
+.tabla td {
+  padding: 10px;
+  text-align: center;
+}
 
 /* ============================= header ====================== */
 .top1_wrapper{background: #333333;}
@@ -545,6 +549,12 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 }
 @media (min-width: 481px) and (max-width: 767px) {
+
+.tabla td {
+  padding: 3px;
+  text-align: center;
+  font-size: 17px;
+}
 	
 }
 /* Landscape phones and down */
@@ -566,6 +576,8 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 	.page-404 .txt1{font-size: 120px; line-height: 120px;}
 	.page-404 .txt2{font-size: 40px; line-height: 40px;}
+
+
 
 }
 	
