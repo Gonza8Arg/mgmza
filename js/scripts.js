@@ -26,8 +26,8 @@ $(document).ready(function() {
 		},
 		mousewheel: false,
 		swipe: {
-			onMouse: true,
-			onTouch: true
+			onMouse: false,
+			onTouch: false
 			},
 		pagination  : ".pagination1"
 
