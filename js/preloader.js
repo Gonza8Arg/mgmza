@@ -1,7 +1,6 @@
-/*! Preloader */
-$(window).on('load', function () {
-    $preloader = $('.holder'),
-    $loader = $preloader.find('.preloader');
-    $loader.fadeOut();
-    $preloader.delay(300).fadeOut('slow');
+$(window).load(function() {
+
+    $(".loader_inner").fadeOut();
+    $(".loader").delay(400).fadeOut("slow");
+
 });
