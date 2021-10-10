@@ -57,7 +57,7 @@ header{float: left; padding-top: 20px; padding-bottom: 20px;}
 .top1 .block2{text-align: right;}
 .top1 .block3{text-align: right;}
 
-.subpage .top2_wrapper{padding-top: 80px; padding-bottom: 55px;}
+.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 35px;}
 
 .top2_wrapper{background: url(../images/bg1.jpg) center center no-repeat #222222; position: relative; padding: 120px 0;}
 /*.top2_top{width: 100%; height: 0px; background: url(../images/top2_top.png) center top no-repeat; position: absolute; left: 0; top: 0;}*/
@@ -362,7 +362,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
 }
 .thumb-isotope .thumbnail a:hover{}
-.thumb-isotope .thumbnail a figure{position: relative; margin: 0; float: none; margin:0px 0px 20px 0px; padding: 6px; background: #ededed; border: 1px solid #cfcfcf; 
+.thumb-isotope .thumbnail a figure{position: relative; margin: 0; float: none; margin:0px 0px 20px 0px; padding: 6px; background: #ededed; border: 1px solid #fff; 
 transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
 }
 .thumb-isotope .thumbnail a:hover figure{background: #222222;}
@@ -436,7 +436,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.prev3{left: -25px; margin-left: 0px; bottom: 50%; margin-bottom: -12px;}
 	.next3{right: -25px; margin-right: 0px; bottom: 50%; margin-bottom: -12px;}
 
-	.subpage .top2_wrapper{padding-top: 90px; padding-bottom: 55px;}
+	.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 36px;}
 
 	.thumbnails1 > li{width: 399px;}
 
@@ -486,7 +486,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.ul1{ padding-left: 25px;}
 	.ul1 > li {font-size: 14px; }
 
-	.subpage .top2_wrapper{padding-top: 80px; padding-bottom: 60px;}
+	.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 38px;}
 
 	.thumbnails1 > li{width: 233px;}
 
@@ -539,7 +539,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 	.box1{border-right:none; border-bottom: 1px solid #dddddd; margin-right: 0px; padding-right: 0px; padding-bottom: 20px; margin-bottom: 20px;}
 
-	.subpage .top2_wrapper{padding-top: 70px; padding-bottom: 55px;}
+	.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 35px;}
 
 	.thumbnails1{margin-left: 0;}
 	.thumbnails1 > li{width: 100%; margin-left: 0;}
@@ -572,7 +572,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	.prev1{margin-right: -89px; bottom: 45px;}
 	.next1{margin-right: -150px; bottom: 45px;}
 
-	.subpage .top2_wrapper{padding-top: 60px; padding-bottom: 55px;}
+	.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 35px;}
 
 	.google_map iframe{height: 280px;}
 
