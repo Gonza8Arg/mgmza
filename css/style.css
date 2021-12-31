@@ -96,7 +96,7 @@ header{float: left; padding-top: 20px; padding-bottom: 20px;}
 
 .top3_wrapper{background: #fff; padding-bottom: 20px; }
 .top3{}
-.top3 > .txt1{text-align: center; font-family: 'Lato'; font-weight: 700; font-size: 48px; line-height: 48px; color: #1a2939; text-transform: uppercase; padding-top: 0px; margin-top: 30px; margin-bottom: 30px;}
+.top3 > .txt1{text-align: center; font-family: 'Lato'; font-weight: 700; font-size: 45px; line-height: 48px; color: #1a2939; text-transform: uppercase; padding-top: 0px; margin-top: 30px; margin-bottom: 30px;}
 .top3 > .txt2{text-align: center; font-family: 'Titillium Web'; font-weight: 300; font-size: 36px; line-height: 36px; color: #1a2939; text-transform: uppercase; padding-top: 15px;}
 
 /* ============================= slider3 ====================== */
@@ -433,8 +433,8 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 
 	#slider3{position: relative; padding-bottom: 40px; padding-top: 50px;}
 
-	.prev3{left: -25px; margin-left: 0px; bottom: 50%; margin-bottom: -12px;}
-	.next3{right: -25px; margin-right: 0px; bottom: 50%; margin-bottom: -12px;}
+	.prev3{left: -25px; margin-left: 0px; bottom: 50%; margin-bottom: 18px;}
+	.next3{right: -25px; margin-right: 0px; bottom: 50%; margin-bottom: 18px;}
 
 	.subpage .top2_wrapper{padding-top: 40px; padding-bottom: 36px;}
 
