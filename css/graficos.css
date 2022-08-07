@@ -1,0 +1,39 @@
+.grafico {
+position: relative; /* IE is dumb */
+width: 450px;
+/*border: 1px solid #B1D632;*/
+padding: 2px;
+}
+.grafico .barra {
+display: block;
+position: relative;
+background: #B1D632;
+/*text-align: center;*/
+padding-left: 8px;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+.grafico .barra span {
+position: absolute; left: 1em;
+}
+
+.grafico2 {
+position: relative; /* IE is dumb */
+width: 450px;
+/*border: 1px solid #DC143C	;*/
+padding: 2px;
+}
+.grafico2 .barra {
+display: block;
+position: relative;
+background: #DC143C	;
+/*text-align: center;*/
+padding-left: 8px;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+.grafico2 .barra span {
+position: absolute; left: 1em;
+}
