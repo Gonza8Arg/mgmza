@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
-    <title>Create a button to send SMS directly</title>
-    <!-- CSS styles for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Us Widget</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
+        /* Add your custom CSS styles here */
+        #textUsWidget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             background-color: #007bff;
             color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        a:hover {
-            background-color: #0069d9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
-  
 <body>
-    <!-- Main heading for the page -->
-    <h1>Get in touch with us</h1>
-    <!-- Description text for the page -->
-    <p>Have any questions or concerns? Send us a text message:</p>
-      
-    <!-- Link for sending a text message -->
-    <a href="sms:+5492657448489">Text us at +91-224-4668-800</a>
+    <!-- Widget button -->
+    <div id="textUsWidget">Text Us</div>
+
+    <script>
+        // JavaScript code to open a messaging app when the widget is clicked
+        document.getElementById('textUsWidget').addEventListener('click', function() {
+            // Check if the user is on an Android device
+            if (/Android/i.test(navigator.userAgent)) {
+                // Replace 'PHONE_NUMBER' with your actual phone number
+                window.location.href = 'sms:+542657448489';
+            }
+            // Check if the user is on an iOS device
+            else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                // Replace '+542657448489actual phone number
+                window.location.href = 'sms:+542657448489'
+            }
+            // For other devices or browsers, you can provide a contact form or alternative method
+            else {
+                alert("Sorry, messaging is not supported on this device.");
+            }
+        });
+    </script>
 </body>
-  
 </html>
