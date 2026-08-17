@@ -20,7 +20,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
 
 <script type="application/ld+json">
 {
@@ -65,7 +67,7 @@
     --cyan-dim:#1e8caa;
     --cyan-glow:rgba(57,208,240,0.35);
     --radius:2px;
-    --display:'Space Grotesk',sans-serif;
+    --display:'Chakra Petch',sans-serif;
     --body:'Inter',sans-serif;
     --mono:'JetBrains Mono',monospace;
   }
@@ -97,7 +99,7 @@
   }
   .eyebrow::before{content:"";width:22px;height:1px;background:var(--cyan);}
 
-  h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.01em;}
+  h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:.01em;text-transform:uppercase;}
 
   /* ---------- NAV ---------- */
   header{
@@ -178,6 +180,7 @@
     display:inline-flex;align-items:center;gap:10px;
     transition:transform .2s, box-shadow .2s, background .2s, border-color .2s;
     border:1px solid transparent;
+    text-transform: uppercase;
   }
   .btn-primary{background:var(--cyan);color:#04121a;}
   .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px var(--cyan-glow);}
@@ -189,6 +192,7 @@
     border-radius:var(--radius);overflow:hidden;
     font-family:var(--mono);
     background:rgba(255,255,255,.015);
+    text-transform: uppercase;
   }
   .hero-status .node{
     flex:1;padding:16px 18px;border-right:1px solid var(--border-soft);
@@ -243,6 +247,38 @@
   #ciberseguridad .card:hover{background:var(--panel-2);}
 
   #desarrollo .grid{grid-template-columns:repeat(2,1fr);}
+
+  .port-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    margin-top:44px;
+  }
+  .port-item{
+    position:relative;aspect-ratio:1/1;overflow:hidden;
+    border:1px solid var(--border);border-radius:var(--radius);
+    background:var(--panel);
+  }
+  .port-item a{display:block;width:100%;height:100%;}
+  .port-item img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease;}
+  .port-item:hover img{transform:scale(1.07);}
+  .port-overlay{
+    position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:16px;gap:4px;
+    background:linear-gradient(180deg,transparent 45%,rgba(6,8,11,.94) 100%);
+    opacity:0;transition:opacity .25s ease;
+  }
+  .port-item:hover .port-overlay{opacity:1;}
+  .port-name{font-family:var(--display);font-size:14px;text-transform:uppercase;letter-spacing:.02em;color:var(--text);}
+  .port-link{font-family:var(--mono);font-size:11.5px;color:var(--cyan);}
+  .port-item.noimg img{display:none;}
+  .port-item.noimg{
+    background:linear-gradient(135deg,var(--panel),var(--panel-2));
+    display:flex;
+  }
+  .port-item.noimg .port-overlay{
+    opacity:1;position:static;height:100%;background:none;
+    align-items:center;justify-content:center;text-align:center;
+  }
+  .port-item.noimg .port-name::before{content:"+ ";color:var(--cyan);}
 
   .trace{
     height:1px;width:100%;
@@ -318,6 +354,7 @@
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:860px){
+    header{backdrop-filter:none;background:var(--bg);}
     .nav-links{
       position:fixed;top:74px;left:0;right:0;bottom:0;
       background:var(--bg);
@@ -325,10 +362,12 @@
       padding:36px 24px;gap:26px;
       transform:translateX(100%);
       transition:transform .3s ease;
+      z-index:150;
     }
     .nav-links.open{transform:translateX(0);}
     .nav-toggle{display:block;}
     .grid{grid-template-columns:1fr !important;}
+    .port-grid{grid-template-columns:repeat(2,1fr);}
     .hero-status{flex-direction:column;}
     .hero-status .node{border-right:none;border-bottom:1px solid var(--border-soft);}
     .hero-status .node:last-child{border-bottom:none;}
@@ -347,18 +386,19 @@
 <header>
   <nav class="wrap">
     <a href="#top" class="brand" aria-label="Nextdata - inicio">
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!--svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M14 20 H26 L58 52 V20 H70 C80 20 88 30 88 42 V58 C88 70 80 80 70 80 H58 L26 48 V80 H14 Z" fill="#eef1f4"/>
         <path d="M58 52 V80 H70 C80 80 88 70 88 58 V56 L58 52 Z" fill="#39d0f0"/>
-      </svg>
-      <span class="brand-name">next<span>data</span></span>
+      </svg-->
+      <img src="img/logo.png" width="80%">
+      <!--span class="brand-name">next<span>data</span></span-->
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#servicio-tecnico">Servicio Técnico</a></li>
       <li><a href="#ciberseguridad">Ciberseguridad</a></li>
       <li><a href="#desarrollo">Desarrollo Web</a></li>
       <li><a href="#contacto">Contacto</a></li>
-      <li><a class="nav-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener">Escribinos →</a></li>
+      <!--li><a class="nav-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener">Escribinos →</a></li-->
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
   </nav>
@@ -587,6 +627,82 @@
           <p>Actualizaciones, correcciones y acompañamiento continuo una vez que tu sitio o sistema ya está en marcha.</p>
         </div>
       </div>
+
+      <!--
+        PORTFOLIO — cuadrícula de 3 columnas.
+        Para agregar una fila nueva, copiá un bloque <div class="port-item">...</div> completo
+        y pegalo dentro de #portfolioGrid (cada 3 items forman una fila).
+        - Cambiá el src de la imagen por la tuya (ideal: foto cuadrada, misma proporción en todas).
+        - Cambiá el href por el link real del sitio.
+        - Cambiá el texto de "port-name".
+        Si una imagen no carga, el casillero muestra un placeholder automáticamente.
+      -->
+
+      <div class="service-head" style="margin-top:90px;">
+        <div>
+          <div class="eyebrow">Portfolio</div>
+          <h2>Sitios que ya desarrollamos</h2>
+          <p class="service-desc">Una muestra de trabajos realizados. Hacé clic en cualquiera para verlo en vivo.</p>
+        </div>
+        <span class="num">/// Ver proyectos</span>
+      </div>
+
+      <div class="port-grid" id="portfolioGrid">
+        <div class="port-item">
+          <a href="https://gonza8arg.github.io/andinoaissa/" target="_blank" rel="noopener">
+            <img src="img/portfolio-1.jpg" alt="Proyecto 1" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Andino AISSA</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://pobregamers.online" target="_blank" rel="noopener">
+            <img src="img/portfolio-2.jpg" alt="Proyecto 2" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Pobregamers</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://mlteventossport.com.ar" target="_blank" rel="noopener">
+            <img src="img/portfolio-3.jpg" alt="Proyecto 3" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">MLT Eventos Sport</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://liberartemasoterapia.com/" target="_blank" rel="noopener">
+            <img src="img/portfolio-4.jpg" alt="Proyecto 4" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Liberarte Masoterapia</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://gonza8arg.github.io/cuis/" target="_blank" rel="noopener">
+            <img src="img/portfolio-5.jpg" alt="Proyecto 5" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">CUIS Indumentaria</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://txtgabe.com/" target="_blank" rel="noopener">
+            <img src="img/portfolio-6.jpg" alt="Proyecto 6" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">TXT Gabe</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <!--div class="port-item">
+          <a href="https://tusitio7.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-7.jpg" alt="Proyecto 7" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 7</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+        <!--div class="port-item">
+          <a href="https://tusitio8.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-8.jpg" alt="Proyecto 8" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 8</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+        <!--div class="port-item">
+          <a href="https://tusitio9.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-9.jpg" alt="Proyecto 9" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 9</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+      </div>
     </div>
   </section>
 
@@ -601,7 +717,7 @@
           <div class="contact-links">
             <a href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
-              +54 9 261 374-2224
+              +54 9 261-5409027
             </a>
             <a href="mailto:mgmzacontacto@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6.5 12 13 21 6.5"/></svg>
