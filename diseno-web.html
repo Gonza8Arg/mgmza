@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nextdata | Diseño de Landing Pages y Páginas Web en Mendoza</title>
+<meta name="description" content="Diseño Landing Pages y páginas web en Mendoza que convierten visitas en clientes. Botón directo a WhatsApp, carga rápida en celular y diseño a medida para comercios, profesionales y PyMEs de Mendoza, Godoy Cruz y Guaymallén.">
+<meta name="keywords" content="diseño de paginas web Mendoza, diseño de landing pages Mendoza, diseñador web Mendoza, landing page para whatsapp, paginas web para pymes Mendoza, diseño web Godoy Cruz, diseño web Guaymallen, crear landing page Mendoza, pagina web para comercio Mendoza">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Nextdata">
+<meta name="geo.region" content="AR-M">
+<meta name="geo.placename" content="Mendoza, Argentina">
+<link rel="canonical" href="https://nextdatamza.online/diseno-web">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nextdata | Diseño de Landing Pages en Mendoza">
+<meta property="og:description" content="Landing Pages estratégicas para comercios, profesionales y PyMEs de Mendoza. Diseño a medida, carga rápida y venta directa por WhatsApp.">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nextdata — Diseño Web",
+  "description": "Diseño de Landing Pages y páginas web para comercios, profesionales y PyMEs en Mendoza, Argentina.",
+  "telephone": "+5492615409027",
+  "email": "mgmzacontacto@gmail.com",
+  "areaServed": [
+    {"@type": "City", "name": "Mendoza"},
+    {"@type": "City", "name": "Godoy Cruz"},
+    {"@type": "City", "name": "Guaymallén"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Mendoza",
+    "addressCountry": "AR"
+  },
+  "priceRange": "$$",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diseño de Landing Pages"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diseño de páginas web a medida"}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0a0d11;
+    --bg-alt:#0d1116;
+    --panel:#12161c;
+    --panel-2:#161b22;
+    --border:#212832;
+    --border-soft:#1a2028;
+    --text:#eef1f4;
+    --text-dim:#9aa5b1;
+    --text-faint:#5c6774;
+    --cyan:#39d0f0;
+    --cyan-dim:#1e8caa;
+    --cyan-glow:rgba(57,208,240,0.35);
+    --radius:2px;
+    --display:'Chakra Petch',sans-serif;
+    --body:'Inter',sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  img,svg{display:block;max-width:100%;}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--cyan);
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--cyan);}
+
+  h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:.01em;text-transform:uppercase;}
+
+  /* ---------- FONDO ANIMADO ---------- */
+  #bgCanvas{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(10,13,17,.72);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border-soft);
+  }
+  nav.wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:74px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand svg{width:34px;height:34px;}
+  .brand-name{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.02em;text-transform:uppercase;}
+  .brand-name span{color:var(--cyan);}
+  .brand-tag{
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+    color:var(--text-faint);text-transform:uppercase;
+    border-left:1px solid var(--border);padding-left:12px;margin-left:2px;
+    display:none;
+  }
+  @media(min-width:640px){.brand-tag{display:inline;}}
+  .nav-links{display:flex;gap:36px;align-items:center;}
+  .nav-links a{
+    font-size:14px;color:var(--text-dim);font-weight:500;
+    position:relative;padding:4px 0;transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--text);}
+  .nav-links a::after{
+    content:"";position:absolute;bottom:-2px;left:0;width:0;height:1px;
+    background:var(--cyan);transition:width .25s;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--cyan);color:#04121a;
+    font-family:var(--mono);font-size:13px;font-weight:600;
+    padding:10px 18px;border-radius:var(--radius);
+    transition:transform .2s, box-shadow .2s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px var(--cyan-glow);}
+  .nav-toggle{display:none;background:none;border:0;color:var(--text);width:26px;height:20px;position:relative;cursor:pointer;}
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after{
+    content:"";position:absolute;left:0;width:100%;height:2px;background:var(--text);transition:.25s;
+  }
+  .nav-toggle span{top:9px;}
+  .nav-toggle::before{top:2px;}
+  .nav-toggle::after{top:16px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;z-index:1;
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding-top:110px;padding-bottom:80px;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(ellipse 60% 50% at 50% 30%, rgba(57,208,240,.10), transparent 70%),
+               linear-gradient(180deg, transparent 0%, var(--bg) 92%);
+    z-index:1;pointer-events:none;
+  }
+  .hero-content{position:relative;z-index:2;max-width:760px;}
+  .hero h1{
+    font-size:clamp(30px,5vw,54px);
+    line-height:1.1;
+    margin-bottom:22px;
+  }
+  .letter{display:inline-block;opacity:0;transform:translateY(14px);animation:letterIn .6s cubic-bezier(.2,.8,.2,1) forwards;}
+  @keyframes letterIn{to{opacity:1;transform:translateY(0);}}
+
+  .hero p.lead{
+    font-size:16.5px;color:var(--text-dim);
+    max-width:580px;margin-bottom:14px;
+  }
+  .hero p.lead strong{color:var(--text);font-weight:600;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 56px;}
+  .btn{
+    font-family:var(--mono);font-size:13.5px;font-weight:600;
+    padding:14px 24px;border-radius:var(--radius);
+    display:inline-flex;align-items:center;gap:10px;
+    transition:transform .2s, box-shadow .2s, background .2s, border-color .2s;
+    border:1px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{background:var(--cyan);color:#04121a;}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px var(--cyan-glow);}
+  .btn-ghost{border-color:var(--border);color:var(--text);}
+  .btn-ghost:hover{border-color:var(--cyan-dim);color:var(--cyan);}
+
+  .hero-status{
+    display:flex;gap:0;border:1px solid var(--border-soft);
+    border-radius:var(--radius);overflow:hidden;
+    font-family:var(--mono);
+    background:rgba(255,255,255,.015);
+  }
+  .hero-status .node{
+    flex:1;padding:16px 18px;border-right:1px solid var(--border-soft);
+  }
+  .hero-status .node:last-child{border-right:none;}
+  .hero-status .node .k{font-size:10.5px;letter-spacing:.14em;color:var(--text-faint);text-transform:uppercase;display:block;margin-bottom:6px;}
+  .hero-status .node .v{font-size:13.5px;color:var(--text);}
+  .hero-status .node .v.on{color:var(--cyan);}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);display:inline-block;margin-right:7px;box-shadow:0 0 8px var(--cyan);animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+  /* ---------- SECTIONS ---------- */
+  section.service{
+    padding:110px 0;
+    border-top:1px solid var(--border-soft);
+    position:relative;z-index:1;
+    background:rgba(10,13,17,.94);
+  }
+  #beneficios{background:rgba(13,17,22,.94);}
+  #planes{background:rgba(10,13,17,.94);}
+  #portfolio{background:rgba(13,17,22,.94);}
+
+  .service-head{
+    display:flex;justify-content:space-between;align-items:flex-end;
+    gap:40px;margin-bottom:56px;flex-wrap:wrap;
+  }
+  .service-head h2{font-size:clamp(24px,3.2vw,36px);max-width:600px;}
+  .service-head .num{
+    font-family:var(--mono);font-size:13px;color:var(--text-faint);
+    white-space:nowrap;
+  }
+  .service-desc{color:var(--text-dim);max-width:560px;font-size:15.5px;}
+  .lead-strong{
+    font-family:var(--display);text-transform:uppercase;
+    font-size:clamp(19px,2.4vw,26px);color:var(--cyan);
+    max-width:640px;margin-top:44px;letter-spacing:.01em;
+  }
+  .cta-line{
+    margin-top:22px;font-size:14.5px;color:var(--text-dim);
+  }
+  .cta-line a{color:var(--cyan);font-family:var(--mono);font-size:13.5px;border-bottom:1px solid var(--cyan-dim);padding-bottom:2px;}
+
+  .grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--border-soft);
+    border:1px solid var(--border-soft);
+    margin-top:48px;
+  }
+  .card{
+    background:var(--bg);
+    padding:28px 26px;
+    transition:background .25s;
+    min-height:150px;
+    display:flex;flex-direction:column;
+    gap:12px;
+  }
+  .card:hover{background:var(--panel);}
+  .card .ic{width:22px;height:22px;color:var(--cyan);}
+  .card h3{font-size:15.5px;font-weight:600;font-family:var(--body);letter-spacing:0;text-transform:none;}
+  .card p{font-size:13.5px;color:var(--text-dim);line-height:1.55;}
+
+  .trace{
+    height:1px;width:100%;
+    background:linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
+    position:relative;margin:0 0 48px;
+  }
+  .trace .tdot{
+    position:absolute;top:-3px;left:50%;transform:translateX(-50%);
+    width:7px;height:7px;border-radius:50%;background:var(--cyan);
+    box-shadow:0 0 10px var(--cyan);
+  }
+
+  /* ---------- PORTFOLIO ---------- */
+  .port-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    margin-top:44px;
+  }
+  .port-item{
+    position:relative;aspect-ratio:1/1;overflow:hidden;
+    border:1px solid var(--border);border-radius:var(--radius);
+    background:var(--panel);
+  }
+  .port-item a{display:block;width:100%;height:100%;}
+  .port-item img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease;}
+  .port-item:hover img{transform:scale(1.07);}
+  .port-overlay{
+    position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:16px;gap:4px;
+    background:linear-gradient(180deg,transparent 45%,rgba(6,8,11,.94) 100%);
+    opacity:0;transition:opacity .25s ease;
+  }
+  .port-item:hover .port-overlay{opacity:1;}
+  .port-name{font-family:var(--display);font-size:14px;text-transform:uppercase;letter-spacing:.02em;color:var(--text);}
+  .port-link{font-family:var(--mono);font-size:11.5px;color:var(--cyan);}
+  .port-item.noimg img{display:none;}
+  .port-item.noimg{background:linear-gradient(135deg,var(--panel),var(--panel-2));display:flex;}
+  .port-item.noimg .port-overlay{opacity:1;position:static;height:100%;background:none;align-items:center;justify-content:center;text-align:center;}
+  .port-item.noimg .port-name::before{content:"+ ";color:var(--cyan);}
+
+  /* ---------- PLANES ---------- */
+  .plan-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+    margin-top:48px;
+  }
+  .plan-card{
+    border:1px solid var(--border);border-radius:var(--radius);
+    padding:32px 28px;display:flex;flex-direction:column;
+    background:rgba(18,22,28,.6);
+    transition:border-color .25s, transform .25s;
+  }
+  .plan-card:hover{border-color:var(--cyan-dim);transform:translateY(-3px);}
+  .plan-card.pro{border-color:var(--cyan-dim);position:relative;}
+  .plan-badge{
+    position:absolute;top:-1px;right:24px;
+    background:var(--cyan);color:#04121a;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+    text-transform:uppercase;padding:5px 12px;
+    border-radius:0 0 4px 4px;
+  }
+  .plan-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);}
+  .plan-card h3{font-size:26px;margin:8px 0 4px;}
+  .plan-sub{font-size:13.5px;color:var(--text-dim);margin-bottom:24px;}
+  .plan-list{display:flex;flex-direction:column;gap:13px;margin-bottom:30px;flex:1;}
+  .plan-list li{
+    display:flex;align-items:flex-start;gap:10px;
+    font-size:14px;color:var(--text-dim);
+  }
+  .ck{
+    flex-shrink:0;width:20px;height:20px;border-radius:3px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:12px;font-weight:700;
+    margin-top:1px;
+  }
+  .ck.yes{background:rgba(57,208,240,.12);color:var(--cyan);}
+  .ck.no{background:rgba(255,255,255,.05);color:var(--text-faint);}
+  .plan-list .placeholder{color:var(--text-faint);font-style:italic;}
+  .plan-price{
+    border-top:1px solid var(--border-soft);padding-top:20px;margin-bottom:22px;
+    display:flex;flex-direction:column;gap:4px;
+  }
+  .price-value{font-family:var(--display);font-size:30px;text-transform:uppercase;color:var(--text);}
+  .price-value .cur{font-size:16px;color:var(--text-faint);margin-right:4px;}
+  .price-note{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+  .plan-cta{width:100%;justify-content:center;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{
+    padding:100px 0 40px;
+    border-top:1px solid var(--border-soft);
+    background:rgba(13,17,22,.95);
+    position:relative;z-index:1;
+  }
+  .contact-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:60px;
+    margin-bottom:80px;
+  }
+  .contact-grid h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:18px;max-width:480px;}
+  .contact-grid p{color:var(--text-dim);max-width:440px;margin-bottom:30px;}
+  .contact-links{display:flex;flex-direction:column;gap:16px;}
+  .contact-links a{
+    display:flex;align-items:center;gap:12px;
+    font-family:var(--mono);font-size:14.5px;
+    color:var(--text);padding:14px 18px;
+    border:1px solid var(--border);border-radius:var(--radius);
+    transition:border-color .2s, color .2s, transform .2s;
+    width:fit-content;
+  }
+  .contact-links a:hover{border-color:var(--cyan-dim);color:var(--cyan);transform:translateX(3px);}
+  .contact-links svg{width:18px;height:18px;flex-shrink:0;}
+  .coverage{
+    font-family:var(--mono);font-size:12px;color:var(--text-faint);
+    letter-spacing:.05em;margin-top:26px;
+  }
+  .coverage b{color:var(--text-dim);font-weight:500;}
+
+  .zone-panel{
+    border:1px solid var(--border);border-radius:var(--radius);
+    padding:26px;
+  }
+  .zone-panel .eyebrow{margin-bottom:20px;}
+  .zone-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:12px 0;border-bottom:1px solid var(--border-soft);
+    font-size:13.5px;
+  }
+  .zone-row:last-child{border-bottom:none;}
+  .zone-row .zn{color:var(--text-dim);font-family:var(--mono);font-size:12.5px;}
+
+  .foot-bottom{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:30px;border-top:1px solid var(--border-soft);
+    flex-wrap:wrap;gap:14px;
+    font-size:12.5px;color:var(--text-faint);font-family:var(--mono);
+  }
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .wa-float{
+    position:fixed;bottom:24px;right:24px;z-index:200;
+    width:56px;height:56px;border-radius:50%;
+    background:var(--cyan);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px var(--cyan-glow);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:26px;height:26px;color:#04121a;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:860px){
+    header{backdrop-filter:none;background:var(--bg);}
+    .nav-links{
+      position:fixed;top:74px;left:0;right:0;bottom:0;
+      background:var(--bg);
+      flex-direction:column;justify-content:flex-start;
+      padding:36px 24px;gap:26px;
+      transform:translateX(100%);
+      transition:transform .3s ease;
+      z-index:150;
+    }
+    .nav-links.open{transform:translateX(0);}
+    .nav-toggle{display:block;}
+    .grid{grid-template-columns:1fr !important;}
+    .port-grid{grid-template-columns:repeat(2,1fr);}
+    .plan-grid{grid-template-columns:1fr;}
+    .hero-status{flex-direction:column;}
+    .hero-status .node{border-right:none;border-bottom:1px solid var(--border-soft);}
+    .hero-status .node:last-child{border-bottom:none;}
+    .contact-grid{grid-template-columns:1fr;gap:40px;}
+    .service-head{flex-direction:column;align-items:flex-start;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+    html{scroll-behavior:auto;}
+    .letter{opacity:1 !important;transform:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header>
+  <nav class="wrap">
+    <a href="#top" class="brand" aria-label="Nextdata - inicio">
+      <!--svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 20 H26 L58 52 V20 H70 C80 20 88 30 88 42 V58 C88 70 80 80 70 80 H58 L26 48 V80 H14 Z" fill="#eef1f4"/>
+        <path d="M58 52 V80 H70 C80 80 88 70 88 58 V56 L58 52 Z" fill="#39d0f0"/>
+      </svg-->
+      <img src="img/logo.png" width="80%">
+      <!--span class="brand-name">next<span>data</span></span-->
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beneficios">Beneficios</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <!--li><a class="nav-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener">Escribinos →</a></li-->
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-content">
+      <div class="eyebrow">Diseño Web · Landing Pages — Mendoza, Argentina</div>
+      <h1 id="heroTitle">¿Dependés solo de Instagram para vender?</h1>
+      <p class="lead"><strong>Diseño Landing Pages atractivas y efectivas para que no pierdas ningún cliente.</strong> Ayudo a negocios de Mendoza a convertir visitantes en clientes con páginas rápidas y optimizadas para vender por WhatsApp.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20una%20Landing%20Page" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+        <a class="btn btn-ghost" href="#planes">Ver planes ↓</a>
+      </div>
+
+      <div class="hero-status">
+        <div class="node">
+          <span class="k">Diseño</span>
+          <span class="v on"><span class="dot"></span>A medida, no plantillas</span>
+        </div>
+        <div class="node">
+          <span class="k">Contacto</span>
+          <span class="v on"><span class="dot"></span>Botón directo a WhatsApp</span>
+        </div>
+        <div class="node">
+          <span class="k">Velocidad</span>
+          <span class="v on"><span class="dot"></span>Carga rápida en celular</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="service" id="beneficios">
+    <div class="wrap">
+      <div class="service-head">
+        <div>
+          <div class="eyebrow">Por qué una Landing Page</div>
+          <h2 class="reveal">Diseño páginas web que transforman visitas en ventas reales</h2>
+          <p class="service-desc">Un perfil en redes sociales no alcanza si querés transmitir profesionalismo y cerrar ventas rápido. Creo Landing Pages estratégicas para comercios, profesionales y PyMEs de Mendoza que necesitan:</p>
+        </div>
+        <span class="num">/// Hago que tu marca destaque en internet</span>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+          <h3>Más contactos directos</h3>
+          <p>Botón integrado a WhatsApp para que te escriban a un clic, sin vueltas ni formularios largos.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3>Presencia profesional 24/7</h3>
+          <p>Mostrá tus servicios, productos o catálogo de forma clara, sin depender solo de Instagram.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 10-13h-8Z"/></svg>
+          <h3>Velocidad y diseño a medida</h3>
+          <p>Páginas que cargan al instante en celulares y destacan frente a tu competencia.</p>
+        </div>
+      </div>
+
+      <p class="lead-strong">Convertí tu presencia digital en un canal constante de nuevos clientes.</p>
+      <p class="cta-line">Escribime por privado y vemos la mejor opción para tu negocio, o <a href="#portfolio">tocá acá para ver ejemplos reales ↓</a></p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="trace"><span class="tdot"></span></div></div>
+
+  <!-- PORTFOLIO -->
+  <section class="service" id="portfolio">
+    <div class="wrap">
+      <div class="service-head">
+        <div>
+          <div class="eyebrow">Portfolio</div>
+          <h2 class="reveal">Sitios que ya desarrollamos</h2>
+          <p class="service-desc">Una muestra de trabajos realizados. Hacé clic en cualquiera para verlo en vivo.</p>
+        </div>
+        <span class="num">/// Ver proyectos</span>
+      </div>
+
+      <!--
+        Para agregar una fila nueva, copiá un bloque <div class="port-item">...</div> completo
+        y pegalo dentro de #portfolioGrid (cada 3 items forman una fila).
+        - Cambiá el src de la imagen por la tuya (ideal: foto cuadrada, misma proporción en todas).
+        - Cambiá el href por el link real del sitio.
+        - Cambiá el texto de "port-name".
+        Si una imagen no carga, el casillero muestra un placeholder automáticamente.
+      -->
+      <div class="port-grid" id="portfolioGrid">
+        <div class="port-item">
+          <a href="https://rhinoguard.com.ar" target="_blank" rel="noopener">
+            <img src="img/portfolio-7.jpg" alt="Proyecto 1" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Rhino Guard</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://gonza8arg.github.io/andinoaissa/" target="_blank" rel="noopener">
+            <img src="img/portfolio-1.jpg" alt="Proyecto 1" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Andino AISSA</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://pobregamers.online" target="_blank" rel="noopener">
+            <img src="img/portfolio-2.jpg" alt="Proyecto 2" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Pobregamers</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://mlteventossport.com.ar" target="_blank" rel="noopener">
+            <img src="img/portfolio-3.jpg" alt="Proyecto 3" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">MLT Eventos Sport</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://mantracueros.com/" target="_blank" rel="noopener">
+            <img src="img/portfolio-9.jpg" alt="Proyecto 1" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Mantra Cueros</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://liberartemasoterapia.com/" target="_blank" rel="noopener">
+            <img src="img/portfolio-4.jpg" alt="Proyecto 4" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Liberarte Masoterapia</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://gonza8arg.github.io/cuis/" target="_blank" rel="noopener">
+            <img src="img/portfolio-5.jpg" alt="Proyecto 5" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">CUIS Indumentaria</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <div class="port-item">
+          <a href="https://gonza8arg.github.io/txtgabe/" target="_blank" rel="noopener">
+            <img src="img/portfolio-6.jpg" alt="Proyecto 6" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">TXT Gabe</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div>
+        <!--div class="port-item">
+          <a href="https://tusitio7.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-7.jpg" alt="Proyecto 7" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 7</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+        <!--div class="port-item">
+          <a href="https://tusitio8.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-8.jpg" alt="Proyecto 8" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 8</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+        <!--div class="port-item">
+          <a href="https://tusitio9.com" target="_blank" rel="noopener">
+            <img src="img/portfolio-9.jpg" alt="Proyecto 9" loading="lazy" onerror="this.closest('.port-item').classList.add('noimg')">
+            <div class="port-overlay"><span class="port-name">Nombre del proyecto 9</span><span class="port-link">Ver sitio →</span></div>
+          </a>
+        </div-->
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="trace"><span class="tdot"></span></div></div>
+
+  <!-- PLANES -->
+  <section class="service" id="planes">
+    <div class="wrap">
+      <div class="service-head">
+        <div>
+          <div class="eyebrow">Planes</div>
+          <h2 class="reveal">Elegí el plan que mejor se adapta a tu negocio</h2>
+          <p class="service-desc">Dos formatos pensados para distintas necesidades. Los puntos y el precio de cada plan se completan según el alcance final.</p>
+        </div>
+        <span class="num">/// 2 opciones</span>
+      </div>
+
+      <!--
+        PLANES — completá o quitá los puntos con ✓ / ✕ según lo que incluya cada plan,
+        y reemplazá "$ ——" por el precio final de cada uno.
+      -->
+      <div class="plan-grid">
+        <div class="plan-card">
+          <span class="plan-tag">Plan Inicial</span>
+          <h3>Express</h3>
+          <p class="plan-sub">Para pequeños comercios</p>
+          <ul class="plan-list">
+            <li><span class="ck yes">✓</span> <span class="placeholder">SEO Completo + Contacto + Ventas</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Landing 1 Carilla</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Información</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Servicios</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Contacto</span></li>
+            <li><span class="ck no">✕</span> <span class="placeholder">Tienda Online</span></li>
+            <li><span class="ck no">✕</span> <span class="placeholder">Web Administrable</span></li>
+          </ul>
+          <div class="plan-price">
+            <span class="price-value"><span class="cur">$</span>129.000</span>
+            <span class="price-note">[Lo pagás 1 vez, luego renovas cada año a $ 17.900]</span>
+          </div>
+          <a class="btn btn-ghost plan-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20el%20Plan%20Inicial%20%2F%20Expr%C3%A9s" target="_blank" rel="noopener">Quiero este plan</a>
+        </div>
+
+        <div class="plan-card pro">
+          <span class="plan-badge">Recomendado</span>
+          <span class="plan-tag">Plan Pro</span>
+          <h3>Ventas</h3>
+          <p class="plan-sub">Para profesionales o empresas de servicios</p>
+          <ul class="plan-list">
+            <li><span class="ck yes">✓</span> <span class="placeholder">SEO Completo + Contacto + Ventas</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Landing 3 Carillas</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Información</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Servicios</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Contacto</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Tienda Online</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Web Administrable</span></li>
+          </ul>
+          <div class="plan-price">
+            <span class="price-value"><span class="cur">$</span>199.000</span>
+            <span class="price-note">[Pagás 19.800 Por Mes para mantener la tienda online]</span>
+          </div>
+          <a class="btn btn-primary plan-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20el%20Plan%20Pro%20%2F%20Ventas" target="_blank" rel="noopener">Quiero este plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="eyebrow">Contacto</div>
+          <h2 class="reveal">Hablemos de tu próxima Landing Page</h2>
+          <p>Escribinos y te respondemos a la brevedad. Trabajamos con comercios, profesionales y PyMEs en todo el Gran Mendoza.</p>
+          <div class="contact-links">
+            <a href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20una%20Landing%20Page" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+              +54 9 261 540-9027
+            </a>
+            <a href="mailto:mgmzacontacto@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6.5 12 13 21 6.5"/></svg>
+              mgmzacontacto@gmail.com
+            </a>
+          </div>
+          <div class="coverage"><b>Cobertura:</b> Ciudad de Mendoza · Godoy Cruz · Guaymallén</div>
+        </div>
+
+        <div class="zone-panel">
+          <div class="eyebrow">Zonas de cobertura</div>
+          <div class="zone-row"><span>Ciudad de Mendoza</span><span class="zn">Mendoza</span></div>
+          <div class="zone-row"><span>Godoy Cruz</span><span class="zn">Mendoza</span></div>
+          <div class="zone-row"><span>Guaymallén</span><span class="zn">Mendoza</span></div>
+          <div class="zone-row"><span>Luján</span><span class="zn">Mendoza</span></div>
+          <div class="zone-row"><span>Maipú</span><span class="zn">Mendoza</span></div>
+          <div class="zone-row"><span>Zonas aledañas</span><span class="zn">Mendoza</span></div>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> Nextdata — Diseño Web · Landing Pages — Mendoza, Argentina</span>
+        <span>Diseño de páginas web y Landing Pages a medida</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<a class="wa-float" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20una%20Landing%20Page" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- animación de letras ---- */
+  function splitLetters(el){
+    if(el.dataset.split) return;
+    el.dataset.split = '1';
+    const text = el.textContent;
+    el.textContent = '';
+    [...text].forEach((ch,i) => {
+      const span = document.createElement('span');
+      span.className = 'letter';
+      span.textContent = ch === ' ' ? '\u00A0' : ch;
+      span.style.animationDelay = (i * 18) + 'ms';
+      el.appendChild(span);
+    });
+  }
+
+  if(!reduceMotion){
+    const heroTitle = document.getElementById('heroTitle');
+    if(heroTitle) splitLetters(heroTitle);
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if(en.isIntersecting){
+          splitLetters(en.target);
+          revealObserver.unobserve(en.target);
+        }
+      });
+    }, {threshold:.4});
+    document.querySelectorAll('h2.reveal').forEach(h => revealObserver.observe(h));
+  }
+
+  /* ---- fade-in de cards ---- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.style.opacity = 1;
+        en.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {threshold: .15});
+  document.querySelectorAll('.card, .plan-card, .port-item').forEach(c => {
+    c.style.opacity = 0;
+    c.style.transform = 'translateY(14px)';
+    c.style.transition = 'opacity .5s ease, transform .5s ease';
+    io.observe(c);
+  });
+
+  /* ---- fondo de puntitos animados en toda la página ---- */
+  (function(){
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas.getContext('2d');
+    let w, h, particles = [];
+    const COUNT = 70;
+    const LINK_DIST = 130;
+
+    function resize(){
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = document.documentElement.scrollHeight;
+    }
+    function init(){
+      particles = Array.from({length: COUNT}, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.25,
+        vy: (Math.random() - 0.5) * 0.25,
+        r: Math.random() * 1.4 + 0.6
+      }));
+    }
+    function step(){
+      ctx.clearRect(0, 0, w, h);
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if(p.x < 0 || p.x > w) p.vx *= -1;
+        if(p.y < 0 || p.y > h) p.vy *= -1;
+      });
+      for(let i=0;i<particles.length;i++){
+        const a = particles[i];
+        ctx.beginPath();
+        ctx.arc(a.x, a.y, a.r, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(57,208,240,0.55)';
+        ctx.fill();
+        for(let j=i+1;j<particles.length;j++){
+          const b = particles[j];
+          const dx = a.x-b.x, dy = a.y-b.y;
+          const dist = Math.sqrt(dx*dx+dy*dy);
+          if(dist < LINK_DIST){
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = 'rgba(57,208,240,' + (0.14 * (1 - dist/LINK_DIST)) + ')';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      if(!reduceMotion) requestAnimationFrame(step);
+    }
+
+    resize();
+    init();
+    if(reduceMotion){
+      step();
+    } else {
+      step();
+      window.addEventListener('resize', () => { resize(); init(); });
+    }
+  })();
+</script>
+</body>
+</html>
