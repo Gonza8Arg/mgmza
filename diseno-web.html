@@ -132,6 +132,7 @@
   .nav-links a{
     font-size:14px;color:var(--text-dim);font-weight:500;
     position:relative;padding:4px 0;transition:color .2s;
+    text-transform: uppercase;
   }
   .nav-links a:hover{color:var(--text);}
   .nav-links a::after{
@@ -170,7 +171,7 @@
                linear-gradient(180deg, transparent 0%, var(--bg) 92%);
     z-index:1;pointer-events:none;
   }
-  .hero-content{position:relative;z-index:2;max-width:760px;}
+  .hero-content{position:relative;z-index:2;max-width:1000px;}
   .hero h1{
     font-size:clamp(30px,5vw,54px);
     line-height:1.1;
@@ -208,8 +209,8 @@
     flex:1;padding:16px 18px;border-right:1px solid var(--border-soft);
   }
   .hero-status .node:last-child{border-right:none;}
-  .hero-status .node .k{font-size:10.5px;letter-spacing:.14em;color:var(--text-faint);text-transform:uppercase;display:block;margin-bottom:6px;}
-  .hero-status .node .v{font-size:13.5px;color:var(--text);}
+  .hero-status .node .k{font-size:15px;letter-spacing:.14em;color:var(--text-faint);text-transform:uppercase;display:block;margin-bottom:6px;}
+  .hero-status .node .v{font-size:15px;color:var(--text);}
   .hero-status .node .v.on{color:var(--cyan);}
   .dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);display:inline-block;margin-right:7px;box-shadow:0 0 8px var(--cyan);animation:pulse 1.8s infinite;}
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
@@ -345,7 +346,7 @@
   }
   .price-value{font-family:var(--display);font-size:30px;text-transform:uppercase;color:var(--text);}
   .price-value .cur{font-size:16px;color:var(--text-faint);margin-right:4px;}
-  .price-note{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+  .price-note{font-family:var(--mono);font-size:13px;color:var(--text);}
   .plan-cta{width:100%;justify-content:center;}
 
   /* ---------- CONTACT / FOOTER ---------- */
@@ -425,7 +426,7 @@
     .nav-links.open{transform:translateX(0);}
     .nav-toggle{display:block;}
     .grid{grid-template-columns:1fr !important;}
-    .port-grid{grid-template-columns:repeat(2,1fr);}
+    .port-grid{grid-template-columns:repeat(1,1fr);}
     .plan-grid{grid-template-columns:1fr;}
     .hero-status{flex-direction:column;}
     .hero-status .node{border-right:none;border-bottom:1px solid var(--border-soft);}
@@ -470,9 +471,10 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-content">
-      <div class="eyebrow">Diseño Web · Landing Pages — Mendoza, Argentina</div>
+      <div class="eyebrow">Mendoza, Argentina</div>
       <h1 id="heroTitle">Transformá Clics en Ventas</h1>
-      <p class="lead"><strong>Landing Pages atractivas y efectivas para que no pierdas ningún cliente.</strong> <br>Ayudo a negocios de Mendoza a convertir visitantes en clientes con páginas rápidas y optimizadas para vender por WhatsApp.</p>
+      <p class="lead"><strong>Páginas webs atractivas y efectivas para que no pierdas ningún cliente.</strong></p>
+      <p class="lead">Ayudo a negocios de Mendoza a convertir visitantes en clientes con páginas rápidas y optimizadas para vender por WhatsApp.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20una%20Landing%20Page" target="_blank" rel="noopener">Escribime por WhatsApp</a>
         <a class="btn btn-ghost" href="#planes">Ver planes ↓</a>
@@ -481,7 +483,7 @@
       <div class="hero-status">
         <div class="node">
           <span class="k">Diseño</span>
-          <span class="v on"><span class="dot"></span>A medida, no plantillas</span>
+          <span class="v on"><span class="dot"></span>A medida, no uso Wordpress ni Plantillas.</span>
         </div>
         <div class="node">
           <span class="k">Contacto</span>
@@ -500,16 +502,17 @@
     <div class="wrap">
       <div class="service-head">
         <div>
-          <div class="eyebrow">Por qué una Landing Page</div>
-          <h2 class="reveal">Diseño páginas web que transforman visitas en ventas reales</h2>
-          <p class="service-desc">Un perfil en redes sociales no alcanza si querés transmitir profesionalismo y cerrar ventas rápido. Creo Landing Pages estratégicas para comercios, profesionales y PyMEs de Mendoza que necesitan:</p>
+          <div class="eyebrow">La Mejor Opción</div>
+          <h2 class="reveal">Por qué una Landing Page?</h2>
+          <p class="service-desc">Un perfil en redes sociales no alcanza si querés transmitir profesionalismo y cerrar ventas rápido.</p>
+          <p class="service-desc">Asi que una Landing Page viene perfecto para comercios, profesionales y PyMEs de que necesitan:</p>
         </div>
-        <span class="num">/// Hago que tu marca destaque en internet</span>
+        <!--span class="num">/// Hago que tu marca destaque en internet</span-->
       </div>
 
       <div class="grid">
         <div class="card">
-          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
+          <svg class="ic" viewBox="0 0 24 24" fill="#25d366"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>
           <h3>Más contactos directos</h3>
           <p>Botón integrado a WhatsApp para que te escriban a un clic, sin vueltas ni formularios largos.</p>
         </div>
@@ -519,7 +522,7 @@
           <p>Mostrá tus servicios, productos o catálogo de forma clara, sin depender solo de Instagram.</p>
         </div>
         <div class="card">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 10-13h-8Z"/></svg>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="yellow" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 10-13h-8Z"/></svg>
           <h3>Velocidad y diseño a medida</h3>
           <p>Páginas que cargan al instante en celulares y destacan frente a tu competencia.</p>
         </div>
@@ -541,7 +544,7 @@
           <h2 class="reveal">Sitios que ya desarrollamos</h2>
           <p class="service-desc">Una muestra de trabajos realizados. Hacé clic en cualquiera para verlo en vivo.</p>
         </div>
-        <span class="num">/// Ver proyectos</span>
+        <!--span class="num">/// Ver proyectos</span-->
       </div>
 
       <!--
@@ -632,9 +635,9 @@
         <div>
           <div class="eyebrow">Planes</div>
           <h2 class="reveal">Elegí el plan que mejor se adapta a tu negocio</h2>
-          <p class="service-desc">Dos formatos pensados para distintas necesidades. Los puntos y el precio de cada plan se completan según el alcance final.</p>
+          <p class="service-desc">Dos formatos pensados para distintas necesidades.</p>
         </div>
-        <span class="num">/// 2 opciones</span>
+        <!--span class="num">/// 2 opciones</span-->
       </div>
 
       <!--
@@ -642,43 +645,42 @@
         y reemplazá "$ ——" por el precio final de cada uno.
       -->
       <div class="plan-grid">
-        <div class="plan-card">
+        <div class="plan-card pro">
           <span class="plan-tag">Plan Inicial</span>
-          <h3>Express</h3>
-          <p class="plan-sub">Para pequeños comercios</p>
+          <h3>PYME</h3>
+          <p class="plan-sub">Para pequeños y medianos comercios</p>
           <ul class="plan-list">
             <li><span class="ck yes">✓</span> <span class="placeholder">SEO Completo + Contacto + Ventas</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Landing 1 Carilla</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Información</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Servicios</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Contacto</span></li>
-            <li><span class="ck no">✕</span> <span class="placeholder">Tienda Online</span></li>
             <li><span class="ck no">✕</span> <span class="placeholder">Web Administrable</span></li>
           </ul>
           <div class="plan-price">
-            <span class="price-value"><span class="cur">$</span>129.000</span>
-            <span class="price-note">[Lo pagás 1 vez, luego renovas cada año a $ 17.900]</span>
+            <span class="price-value"><span class="cur">$</span>109.000</span>
+            <span class="price-note">[Lo pagás 1 vez, luego renovas cada año a $ 17.900 tu Dominio]</span>
           </div>
           <a class="btn btn-ghost plan-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20el%20Plan%20Inicial%20%2F%20Expr%C3%A9s" target="_blank" rel="noopener">Quiero este plan</a>
         </div>
 
         <div class="plan-card pro">
-          <span class="plan-badge">Recomendado</span>
+          <!--span class="plan-badge">Ventas</span-->
           <span class="plan-tag">Plan Pro</span>
-          <h3>Ventas</h3>
+          <h3>Empresas</h3>
           <p class="plan-sub">Para profesionales o empresas de servicios</p>
           <ul class="plan-list">
             <li><span class="ck yes">✓</span> <span class="placeholder">SEO Completo + Contacto + Ventas</span></li>
-            <li><span class="ck yes">✓</span> <span class="placeholder">Landing 3 Carillas</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Landing hasta 5 Carillas</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Información</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Servicios</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Contacto</span></li>
-            <li><span class="ck yes">✓</span> <span class="placeholder">Tienda Online</span></li>
             <li><span class="ck yes">✓</span> <span class="placeholder">Web Administrable</span></li>
+            <li><span class="ck yes">✓</span> <span class="placeholder">Capacitación de como administrar la web</span></li>
           </ul>
           <div class="plan-price">
             <span class="price-value"><span class="cur">$</span>199.000</span>
-            <span class="price-note">[Pagás 19.800 Por Mes para mantener la tienda online]</span>
+            <span class="price-note">[Lo pagás 1 vez, luego renovas cada año a $ 17.900 tu Dominio]</span>
           </div>
           <a class="btn btn-primary plan-cta" href="https://wa.me/5492615409027?text=Hola%20Nextdata%2C%20quiero%20consultar%20por%20el%20Plan%20Pro%20%2F%20Ventas" target="_blank" rel="noopener">Quiero este plan</a>
         </div>
@@ -704,7 +706,7 @@
               mgmzacontacto@gmail.com
             </a>
           </div>
-          <div class="coverage"><b>Cobertura:</b> Ciudad de Mendoza · Godoy Cruz · Guaymallén</div>
+          <!--div class="coverage"><b>Cobertura:</b> Ciudad de Mendoza · Godoy Cruz · Guaymallén</div-->
         </div>
 
         <div class="zone-panel">
